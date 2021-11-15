@@ -1,0 +1,13 @@
+@import "_variables";
+
+.btn-primary, .operator, .clear, .Equals{
+  background-color: $secondary-colors;
+}
+
+button{
+  border-radius:15px;
+  margin: 5px;
+  padding: 5px;
+  background-color: $secondary-colors;
+  font-size: 1.3rem;
+}

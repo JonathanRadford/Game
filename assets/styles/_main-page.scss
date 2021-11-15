@@ -1,0 +1,28 @@
+@import "_variables";
+
+
+
+#name{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-input{
+  background-color: $tertiary-colors;
+  color: $secondary-colors;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#name__img{
+  width: 150px;
+  height: auto;
+}
+
+#Welcome{
+  text-align: center;
+}
+

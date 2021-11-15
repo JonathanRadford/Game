@@ -1,0 +1,51 @@
+.btn-primary, .operator, .clear, .Equals {
+  background-color: #494b4b;
+}
+
+button {
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #494b4b;
+  font-size: 1.3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+  background-color: #0d9263;
+  color: #ececec;
+  font-weight: 2rem;
+  text-shadow: 1.5px 1.5px #494b4b;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-input {
+  background-color: #ececec;
+  color: #494b4b;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#name__img {
+  width: 150px;
+  height: auto;
+}
+
+#Welcome {
+  text-align: center;
+}
