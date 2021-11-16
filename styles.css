@@ -1,5 +1,7 @@
-.btn-primary, .operator, .clear, .Equals {
-  background-color: #494b4b;
+#btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 button {
@@ -21,12 +23,16 @@ button {
   text-shadow: 1.5px 1.5px #494b4b;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   padding-top: 50px;
 }
 
-#name {
+#welcome {
+  text-align: center;
+}
+
+#game-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -48,4 +54,10 @@ h1 {
 
 #Welcome {
   text-align: center;
+}
+
+#old-man {
+  padding-top: 50px;
+  width: 150px;
+  height: auto;
 }

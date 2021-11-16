@@ -1,9 +1,11 @@
 @import "_variables";
 
-.btn-primary, .operator, .clear, .Equals{
-  background-color: $secondary-colors;
+#btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
 }
-
 button{
   border-radius:15px;
   margin: 5px;
