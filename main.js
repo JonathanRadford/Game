@@ -19,7 +19,7 @@ let StoryLine =
   button2: "Get away you filthy oaf", 
   header: `<h2>You meet a man in the woods who looks destitute and defeated. He begs you for money!</h2>`,
   text: 
-  `<img id="old-man" src="./imagesfolder/dad.png">
+  `<img id="old-man" src="./imagesfolder/path1.png">
   <div id="welcome">
   <h2 id="main-text"> "Please help. I've got naught but the clothes on my skin!</h2>
   </div>`
@@ -29,37 +29,38 @@ let StoryLine =
   button1: "CURSE YOU, Cows are my mortal enemy!",
   button2: "Thank you, Kind friend",
   header: `<h2>You come across a lowly cowhand, who offers you the finest Milk in the land</h2>`, 
-  text: `<img id="old-man" src="./imagesfolder/daf.png">
+  text: `<img id="old-man" src="./imagesfolder/path2.png">
   <div id="welcome">
   <h2 id="main-text"> "Would you like to try the finest Milk this side of Codeshire?"</h2>
   </div>`
   },
 
 3: {
-  button1: "...",
-  button2: "I will defeat you, you brute!",
-  header: `<h2>You witness a strong man throw rocks across the riverbed. He approaches...</h2>`, 
+  button1: "Go left",
+  button2: "Go right",
+  header: `<h2>The man accepts your gold, blesses you, then points in two directions.</h2>`, 
   text: `<img id="old-man" src="./imagesfolder/daf.png">
   <div id="welcome">
-  <h2 id="main-text"> "Care to challenge me and prove your mettle?"</h2>
+  <h2 id="main-text"> *whispers* "Go left to find beauty, go right to find power"</h2>
   </div>`
 },
 
 4: {
-  button1: "4!",
-  button2: "4", 
-  header: `<h2>"4"</h2>`,
+  button1: "Go right",
+  button2: "Go left", 
+  header: `<h2>The old man, terrified and upset, points you in two directions.</h2>`,
   text: `<img id="old-man" src="daf.png">
   <div id="welcome">
-  <h2 id="main-text"> "4"</h2>
+  <h2 id="main-text"> "Go right to find beauty, go left to find power"</h2>
   </div>`
   },
+
 5: {
     button1: "Bad milk gave me flatulence!",
     button2: "It all began long ago...", 
     header: `<h2>The cowhand is dumfounded that a human could have a cow as a mortal enemy.</h2>`,
     text: 
-    `<img id="old-man" src="./imagesfolder/DafW1.png">
+    `<img id="old-man" src="./imagesfolder/path2.1.png">
     <div id="welcome">
     <h2 id="main-text"> "What couldst a cow have done to ye?"</h2>
     </div>`
@@ -69,29 +70,27 @@ let StoryLine =
     button1: "*Continues drinking!*",
     button2: "This will not end well for ye!",
     header: `<h2>You take the bottle in haste without realising the cowhand has become a great Witch!"</h2>`, 
-    text: `<img id="old-man" src="./imagesfolder/DafW3.png">
+    text: `<img id="old-man" src="./imagesfolder/path2.2.png">
     <div id="welcome">
     <h2 id="main-text"> "You FOOL! That milk? POISONED!" *Maniacal laugh*</h2>
     </div>`
     },
   7: {
-      button1: "7",
-      button2: "7", 
-      header: `<h2>7</h2>`,
-      text: 
-      `<img id="old-man" src="dad.png">
-      <div id="welcome">
-      <h2 id="main-text"> "7"</h2>
-      </div>`
+      button1: "...",
+  button2: "I will defeat you, you brute!",
+  header: `<h2>You witness a strong man throw rocks across the riverbed. He approaches...</h2>`, 
+  text: `<img id="old-man" src="./imagesfolder/daf.png">
+  <div id="welcome">
+  <h2 id="main-text"> "Care to challenge me and prove your mettle?"</h2>
+  </div>`
     },
-    
-    8: { 
-      button1: "8",
-      button2: "8",
-      header: `<h2>8</h2>`, 
-      text: `<img id="old-man" src="daf.png">
+   8: { 
+      button1: "Beauty",
+      button2: "Power!",
+      header: `<h2>After taking directions from the old man, you stumble upon a beautiful Elf </h2>`, 
+      text: `<img id="old-man" src="./imagesfolder/right(evil).png">
       <div id="welcome">
-      <h2 id="main-text"> 8</h2>
+      <h2 id="main-text">"I am Sona. What do you wish for?"</h2>
       </div>`
       },
     9: { 
@@ -125,9 +124,9 @@ function start(){
   Welcome.innerHTML = "Welcome, " + newName + ". We shall begin your journey!";
   button1.innerHTML = "Path 1";
   button2.innerHTML = "Path 2";
-  button2.style = "display: flex";
   button1.addEventListener("click", stageOne)
   button2.addEventListener("click", stageTwo)
+  
 }
 
 function stageOne() {
@@ -135,7 +134,6 @@ function stageOne() {
   button2.innerHTML = `${StoryLine[1].button2}` ;
   header.innerHTML =  `${StoryLine[1].header}`  ;
   gameArea.innerHTML = `${StoryLine[1].text}`   ;
-  button2.style = "display: flex";
   button1.addEventListener("click", stageThree)
   button2.addEventListener("click", stageFour)
 }
@@ -155,7 +153,7 @@ function stageThree() {
   header.innerHTML =  `${StoryLine[3].header}`  ;
   gameArea.innerHTML = `${StoryLine[3].text}`   ;
   button1.addEventListener("click", stageSeven)
-  button2.addEventListener("click", stageSeven)
+  button2.addEventListener("click", stageEight)
 }
 
 function stageFour() {
@@ -199,8 +197,9 @@ function stageEight() {
  button2.innerHTML = `${StoryLine[8].button2}` ;
  header.innerHTML =  `${StoryLine[8].header}`  ;
  gameArea.innerHTML = `${StoryLine[8].text}`   ;
- button1.addEventListener("click", stageEight)
- button2.addEventListener("click", stageEight)
+ button1.addEventListener("click", stageSuccess)
+ button2.addEventListener("click", stageDeath)
+ 
 }
 
 function stageSuccess() {
@@ -208,6 +207,8 @@ function stageSuccess() {
   button2.innerHTML = `${StoryLine[9].button2}` ;
   header.innerHTML =  `${StoryLine[9].header}`  ;
   gameArea.innerHTML = `${StoryLine[9].text}`   ;
+  button1.style= "display: none"
+  button2.style= "display: none"
 }
 function stageDeath() {
   button1.innerHTML = `${StoryLine[10].button1}` ;
