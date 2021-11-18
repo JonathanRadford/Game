@@ -4,7 +4,6 @@
 //call the specific story data when a button is pressed 
 
 
-
 let Welcome = document.getElementById("welcome");
 let inputName = document.getElementById("name-input");
 let button1 = document.getElementById("btn-one");
@@ -20,7 +19,7 @@ let StoryLine =
   button2: "Get away you filthy oaf", 
   header: `<h2>You meet a man in the woods who looks destitute and defeated. He begs you for money!</h2>`,
   text: 
-  `<img id="old-man" src="dad.png">
+  `<img id="old-man" src="./imagesfolder/dad.png">
   <div id="welcome">
   <h2 id="main-text"> "Please help. I've got naught but the clothes on my skin!</h2>
   </div>`
@@ -30,7 +29,7 @@ let StoryLine =
   button1: "CURSE YOU, Cows are my mortal enemy!",
   button2: "Thank you, Kind friend",
   header: `<h2>You come across a lowly cowhand, who offers you the finest Milk in the land</h2>`, 
-  text: `<img id="old-man" src="daf.png">
+  text: `<img id="old-man" src="./imagesfolder/daf.png">
   <div id="welcome">
   <h2 id="main-text"> "Would you like to try the finest Milk this side of Codeshire?"</h2>
   </div>`
@@ -40,7 +39,7 @@ let StoryLine =
   button1: "...",
   button2: "I will defeat you, you brute!",
   header: `<h2>You witness a strong man throw rocks across the riverbed. He approaches...</h2>`, 
-  text: `<img id="old-man" src="daf.png">
+  text: `<img id="old-man" src="./imagesfolder/daf.png">
   <div id="welcome">
   <h2 id="main-text"> "Care to challenge me and prove your mettle?"</h2>
   </div>`
@@ -58,9 +57,9 @@ let StoryLine =
 5: {
     button1: "Bad milk gave me flatulence!",
     button2: "It all began long ago...", 
-    header: `<h2>The man, dumfounded that a human could have a cow as a mortal enemy is left shook.</h2>`,
+    header: `<h2>The cowhand is dumfounded that a human could have a cow as a mortal enemy.</h2>`,
     text: 
-    `<img id="old-man" src="DafW1.png">
+    `<img id="old-man" src="./imagesfolder/DafW1.png">
     <div id="welcome">
     <h2 id="main-text"> "What couldst a cow have done to ye?"</h2>
     </div>`
@@ -70,7 +69,7 @@ let StoryLine =
     button1: "*Continues drinking!*",
     button2: "This will not end well for ye!",
     header: `<h2>You take the bottle in haste without realising the cowhand has become a great Witch!"</h2>`, 
-    text: `<img id="old-man" src="DafW3.png">
+    text: `<img id="old-man" src="./imagesfolder/DafW3.png">
     <div id="welcome">
     <h2 id="main-text"> "You FOOL! That milk? POISONED!" *Maniacal laugh*</h2>
     </div>`
@@ -108,9 +107,9 @@ let StoryLine =
        button1: "10",
        button2: "10",
        header: `<h2>You have died of dysentery</h2>`, 
-       text: `<img id="old-man" src="game_over.png">`
+       text: `<img id="old-man" src="./imagesfolder/game_over.png">`
             },
-};
+}
 
 prologue()
 
@@ -220,7 +219,6 @@ function stageDeath() {
 }
 
 const music = document.getElementById("myAudio"); 
-
 function playAudio() { 
   music.play(); 
 } 
