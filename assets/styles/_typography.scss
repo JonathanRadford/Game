@@ -7,7 +7,6 @@
   font-weight: bold;
   background-color: $primary-colors;
   color: $tertiary-colors;
-  font-weight: 2rem;
   text-shadow: 1.5px 1.5px  $secondary-colors;
 }
 
@@ -16,14 +15,13 @@ h1, h2{
   padding-top: 25px;
 }
 
+h2{
+  font-size: 1.3rem;
+}
+
 #welcome{
   text-align: center;
 }
-
-
-
-
-
 
 
 //Mobile: 320px

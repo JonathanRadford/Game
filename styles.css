@@ -1,4 +1,4 @@
-#btn {
+.btn {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -9,7 +9,14 @@ button {
   margin: 5px;
   padding: 5px;
   background-color: #494b4b;
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+
+#btn-music {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 * {
@@ -19,13 +26,16 @@ button {
   font-weight: bold;
   background-color: #0d9263;
   color: #ececec;
-  font-weight: 2rem;
   text-shadow: 1.5px 1.5px #494b4b;
 }
 
 h1, h2 {
   text-align: center;
   padding-top: 25px;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 #welcome {
