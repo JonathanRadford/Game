@@ -28,18 +28,23 @@ const getStart = () => {
   button1.innerHTML = "Path 1";
   button2.innerHTML = "Path 2";
   button1.addEventListener("click", () =>
-    getStage(1, () => {getStage(3, () => {getStage(7, getEnding2, getEnding2);},
+    getStage(1, () => {getStage(3, () => {getStage(7, getEnding1, getEnding1);},
                                    () => {getStage(8, getEnding2, getEnding2);},
 );},
              
-                () => {getStage(4, () => {getStage(7, getEnding2, getEnding2);},
-                                   () => {getStage(8, getEnding2, getEnding2);},
+                () => {getStage(4, () => {getStage(9, getEnding2, getEnding2);},
+                                   () => {getStage(10, getEnding2, getEnding2);},
 );},));
 
-    button2.addEventListener("click", () => 
+  button2.addEventListener("click", () =>
+    getStage(2, () => {getStage(5, () => {getStage(11, getEnding4, getEnding4);},
+                                   () => {getStage(12, getEnding3, getEnding3);},
+);},
+         
+                () => {getStage(6, () => {getStage(13, getEnding3, getEnding3);},
+                                   () => {getStage(14, getEnding4, getEnding4);},
+);},));}
 
-    getStage(2, () => {getStage(5, getEnding2, getEnding2);}, () => {getStage(6, getEnding2, getEnding2);},));
-}
 
 const getStage = (storyLineIndex, buttonOneAction, buttonTwoAction) => {
   button1.innerHTML = `${StoryLine[storyLineIndex].button1}`;
@@ -51,19 +56,37 @@ const getStage = (storyLineIndex, buttonOneAction, buttonTwoAction) => {
 };
 
 const getEnding1 = () => {
-  button1.innerHTML = `${StoryLine[9].button1}`;
-  button2.innerHTML = `${StoryLine[9].button2}`;
-  header.innerHTML = `${StoryLine[9].header}`;
-  gameArea.innerHTML = `${StoryLine[9].text}`;
+  button1.innerHTML = `${StoryLine[15].button1}`;
+  button2.innerHTML = `${StoryLine[15].button2}`;
+  header.innerHTML = `${StoryLine[15].header}`;
+  gameArea.innerHTML = `${StoryLine[15].text}`;
   button1.style = "display: none";
   button2.style = "display: none";
 }
 
 const getEnding2 = () =>{
-  button1.innerHTML = `${StoryLine[10].button1}`;
-  button2.innerHTML = `${StoryLine[10].button2}`;
-  header.innerHTML = `${StoryLine[10].header}`;
-  gameArea.innerHTML = `${StoryLine[10].text}`;
+  button1.innerHTML = `${StoryLine[16].button1}`;
+  button2.innerHTML = `${StoryLine[16].button2}`;
+  header.innerHTML = `${StoryLine[16].header}`;
+  gameArea.innerHTML = `${StoryLine[16].text}`;
+  button1.style = "display: none";
+  button2.style = "display: none";
+}
+
+const getEnding3 = () => {
+  button1.innerHTML = `${StoryLine[17].button1}`;
+  button2.innerHTML = `${StoryLine[17].button2}`;
+  header.innerHTML = `${StoryLine[17].header}`;
+  gameArea.innerHTML = `${StoryLine[17].text}`;
+  button1.style = "display: none";
+  button2.style = "display: none";
+}
+
+const getEnding4 = () =>{
+  button1.innerHTML = `${StoryLine[18].button1}`;
+  button2.innerHTML = `${StoryLine[18].button2}`;
+  header.innerHTML = `${StoryLine[18].header}`;
+  gameArea.innerHTML = `${StoryLine[18].text}`;
   button1.style = "display: none";
   button2.style = "display: none";
 }

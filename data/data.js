@@ -92,7 +92,75 @@
   10: {
     button1: "10",
     button2: "10",
+    header: `<h2>10</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+    <h2 id="main-text">10</h2>
+    </div>`,
+  },
+  11: {
+    button1: "11",
+    button2: "11",
+    header: `<h2>11</h2>`,
+    text: `<img id="old-man" src="daf.png">
+      <div id="welcome">
+      <h2 id="main-text">11</h2>
+      </div>`,
+  },
+
+  12: {
+    button1: "12",
+    button2: "12",
+    header: `<h2>12</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+    <h2 id="main-text">12</h2>
+    </div>`,
+  },
+  13: {
+    button1: "13",
+    button2: "13",
+    header: `<h2>13</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+    <h2 id="main-text"> 13</h2>
+    </div>`,
+  },
+
+  14: {
+    button1: "14",
+    button2: "14",
+    header: `<h2>14</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+    <h2 id="main-text"> 14</h2>
+    </div>`,
+  },
+
+  15: {
+    button1: "",
+    button2: "",
     header: `<h2>You have died of dysentery</h2>`,
+    text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
+  },
+
+  16: {
+    button1: "",
+    button2: "",
+    header: `<h2>YOU HAVE WON!</h2>`,
+    text: `<img id="old-man" src="daf.png">`,
+  },
+  17: {
+    button1: "",
+    button2: "",
+    header: `<h2>17</h2>`,
+    text: `<img id="old-man" src="daf.png">`,
+  },
+
+  18: {
+    button1: "",
+    button2: "",
+    header: `<h2>18</h2>`,
     text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
   },
 };
