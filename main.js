@@ -138,4 +138,4 @@ const rename = () => {
 
 //initial logic
 prologue();
-playAudio;
+playAudio();
