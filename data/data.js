@@ -60,12 +60,12 @@
   },
 
   7: {
-    button1: "...",
+    button1: "I dream of a better life. Wisdom",
     button2: "I will defeat you, you brute!",
-    header: `<h2>You witness a strong man throw rocks across the riverbed. He approaches...</h2>`,
-    text: `<img id="old-man" src="./imagesfolder/daf.png">
+    header: `<h2>You notice a wise man camping by a fire, stroking his beard. You approach. </h2>`,
+    text: `<img id="old-man" src="./imagesfolder/path1.png">
       <div id="welcome">
-      <h2 id="main-text"> "Care to challenge me and prove your mettle?"</h2>
+      <h2 id="main-text"> "I see you've made it this far. Do you seek wisdom or power?"</h2>
       </div>`,
   },
 
@@ -118,12 +118,12 @@
     </div>`,
   },
   13: {
-    button1: "13",
-    button2: "13",
-    header: `<h2>13</h2>`,
+    button1: "",
+    button2: "",
+    header: `<h2>You beat the old man to a pulp and in his dying breath he has cursed you.</h2>`,
     text: `<img id="old-man" src="daf.png">
     <div id="welcome">
-    <h2 id="main-text"> 13</h2>
+    <h2 id="main-text">You will die of...</h2>
     </div>`,
   },
 
@@ -133,34 +133,43 @@
     header: `<h2>14</h2>`,
     text: `<img id="old-man" src="daf.png">
     <div id="welcome">
-    <h2 id="main-text"> 14</h2>
+    <h2 id="main-text">Ending2</h2>
     </div>`,
   },
 
   15: {
     button1: "",
     button2: "",
-    header: `<h2>You have died of dysentery</h2>`,
-    text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
+    header: `<h2>The man nods with approvement.</h2>`,
+    text: `<img id="old-man" src="">
+    <div id="welcome">
+      <h2 id="main-text">"Let me give you some sagely advice. Life is often difficult, so dream big but think small. That way small victories bring joy."</h2>
+    </div>`,
   },
 
   16: {
     button1: "",
     button2: "",
-    header: `<h2>YOU HAVE WON!</h2>`,
-    text: `<img id="old-man" src="daf.png">`,
+    header: `<h2>The great Elf sees the kindness in your heart and bequeths you the finest sword in all of Codeshire.</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+      <h2 id="main-text">"It's dangerous to go alone. Take this, for you have the heart of a hero."</h2>
+    </div>`,
   },
   17: {
     button1: "",
     button2: "",
-    header: `<h2>17</h2>`,
-    text: `<img id="old-man" src="daf.png">`,
+    header: `<h2>You attempt to fight the great Elf but her powers are too much for you and she destroys you with a punishing blow. It's super effective</h2>`,
+    text: `<img id="old-man" src="./imagesfolder/game_over.png">
+    <div id="welcome">
+      <h2 id="main-text">You have fainted.</h2>
+    </div>`,
   },
 
   18: {
     button1: "",
     button2: "",
-    header: `<h2>18</h2>`,
+    header: `<h2>You have died of dysentery</h2>`,
     text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
   },
 };
