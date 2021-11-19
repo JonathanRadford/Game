@@ -28,9 +28,16 @@ const getStart = () => {
   button1.innerHTML = "Path 1";
   button2.innerHTML = "Path 2";
   button1.addEventListener("click", () =>
-    getStage(1, () => {getStage(3, getEnding2, getEnding2);},() => {getStage(4, getEnding2, getEnding2);},));
+    getStage(1, () => {getStage(3, () => {getStage(7, getEnding2, getEnding2);},
+                                   () => {getStage(8, getEnding2, getEnding2);},
+);},
+             
+                () => {getStage(4, () => {getStage(7, getEnding2, getEnding2);},
+                                   () => {getStage(8, getEnding2, getEnding2);},
+);},));
 
     button2.addEventListener("click", () => 
+
     getStage(2, () => {getStage(5, getEnding2, getEnding2);}, () => {getStage(6, getEnding2, getEnding2);},));
 }
 
@@ -60,8 +67,6 @@ const getEnding2 = () =>{
   button1.style = "display: none";
   button2.style = "display: none";
 }
-
-
 
 function playAudio() {
   music.play();
