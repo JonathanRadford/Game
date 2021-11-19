@@ -22,7 +22,7 @@ const pauseAudio = () => {
 }
 
 const prologue = () => {
-  button2.addEventListener("click", prologue);
+  button2.addEventListener("click", rename);
   button1.addEventListener("click", () => {
     newName = inputName.value;
     getStart();
@@ -48,7 +48,7 @@ const getStart = () => {
                                    () => {getStage(10, getEnding3, getEnding3);},
 );},
          
-                () => {getStage(6, () => {getStage(11, getEnding3, getEnding3);},
+                () => {getStage(6, () => {getStage(11, getEnding2, getEnding3);},
                                    () => {getStage(12, getEnding4, getEnding4);},
 );},));}
 
@@ -77,7 +77,7 @@ const getEnding1 = () => {
   header.innerHTML = `${StoryLine[13].header}`;
   gameArea.innerHTML = `${StoryLine[13].text}`;
   button1.style = "display: none"
-  button2.style = "display: none"
+  
 }
 
 const getEnding2 = () =>{
@@ -95,7 +95,7 @@ const getEnding3 = () => {
   button2.innerHTML = `${StoryLine[15].button2}`;
   header.innerHTML = `${StoryLine[15].header}`;
   gameArea.innerHTML = `${StoryLine[15].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
   button2.style = "display: none"
 }
 
@@ -104,7 +104,7 @@ const getEnding4 = () =>{
   button2.innerHTML = `${StoryLine[16].button2}`;
   header.innerHTML = `${StoryLine[16].header}`;
   gameArea.innerHTML = `${StoryLine[16].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
   button2.style = "display: none"
 }
 
@@ -113,7 +113,7 @@ const getEnding5 = () => {
   button2.innerHTML = `${StoryLine[17].button2}`;
   header.innerHTML = `${StoryLine[17].header}`;
   gameArea.innerHTML = `${StoryLine[17].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
   button2.style = "display: none"
 }
 
@@ -122,9 +122,18 @@ const getEnding6 = () =>{
   button2.innerHTML = `${StoryLine[18].button2}`;
   header.innerHTML = `${StoryLine[18].header}`;
   gameArea.innerHTML = `${StoryLine[18].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
   button2.style = "display: none"
 }
+
+const refreshPage = () => {
+  location.reload();
+}
+const rename = () => {
+  inputName.value = ""
+  console.log("THIS")
+}
+
 
 
 //initial logic

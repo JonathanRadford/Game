@@ -61,7 +61,7 @@
 
   7: {
     button1: "I dream of a better life. Wisdom",
-    button2: "I will defeat you, you brute!",
+    button2: "I seek POWER!",
     header: `<h2>You notice a wise man camping by a fire, stroking his beard. You approach. </h2>`,
     text: `<img id="old-man" src="./imagesfolder/path1.png">
       <div id="welcome">
@@ -80,12 +80,12 @@
   },
 
   9: {
-    button1: "9",
+    button1: "**",
     button2: "9",
-    header: `<h2>9</h2>`,
+    header: `<h2>The cowhand realises that the true villain of this piece is Lactose Intolerance</h2>`,
     text: `<img id="old-man" src="daf.png">
       <div id="welcome">
-      <h2 id="main-text"> 9</h2>
+      <h2 id="main-text">I've wasted my life! What</h2>
       </div>`,
   },
 
@@ -120,11 +120,8 @@
   13: {
     button1: "",
     button2: "",
-    header: `<h2>You beat the old man to a pulp and in his dying breath he has cursed you.</h2>`,
-    text: `<img id="old-man" src="daf.png">
-    <div id="welcome">
-    <h2 id="main-text">You will die of...</h2>
-    </div>`,
+    header: `<h2>You seek power and the old man gives it to you, but absolute power corrupts absolutely and you become the villain of this story!</h2>`,
+    text: `<img id="old-man" src="daf.png">`,
   },
 
   14: {
@@ -138,7 +135,7 @@
   },
 
   15: {
-    button1: "",
+    button1: "Restart",
     button2: "",
     header: `<h2>The man nods with approvement.</h2>`,
     text: `<img id="old-man" src="">
@@ -148,7 +145,7 @@
   },
 
   16: {
-    button1: "",
+    button1: "Restart",
     button2: "",
     header: `<h2>The great Elf sees the kindness in your heart and bequeths you the finest sword in all of Codeshire.</h2>`,
     text: `<img id="old-man" src="daf.png">
@@ -157,7 +154,7 @@
     </div>`,
   },
   17: {
-    button1: "",
+    button1: "Restart",
     button2: "",
     header: `<h2>You attempt to fight the great Elf but her powers are too much for you and she destroys you with a punishing blow. It's super effective</h2>`,
     text: `<img id="old-man" src="./imagesfolder/game_over.png">
@@ -167,7 +164,7 @@
   },
 
   18: {
-    button1: "",
+    button1: "Restart",
     button2: "",
     header: `<h2>You have died of dysentery</h2>`,
     text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
