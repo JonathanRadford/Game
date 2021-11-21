@@ -24,6 +24,17 @@ h2{
 }
 
 
+@media only screen and (min-width: 768px) {
+  h2{
+    font-size: 1.8rem;
+  }
+  #name-input{
+    font-size: 1.8rem;
+  }
+  #welcome{
+    font-size: 1.8rem;
+  }
+}
 //Mobile: 320px
 //Tablet: 768px
 //Desktop: 1024px

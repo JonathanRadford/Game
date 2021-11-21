@@ -19,3 +19,13 @@ button{
   justify-content: center;
   flex-direction: row;
 }
+
+@media only screen and (min-width: 768px) {
+  button{
+    border-radius:15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: $secondary-colors;
+    font-size: 1.6rem;
+  }
+}

@@ -19,6 +19,15 @@ button {
   flex-direction: row;
 }
 
+@media only screen and (min-width: 768px) {
+  button {
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #494b4b;
+    font-size: 1.6rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +51,19 @@ h2 {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #name-input {
+    font-size: 1.8rem;
+  }
+
+  #welcome {
+    font-size: 1.8rem;
+  }
+}
 #game-section {
   display: flex;
   justify-content: center;
@@ -66,9 +88,17 @@ h2 {
   text-align: center;
 }
 
-#old-man {
+#story-img {
   margin-top: 20px;
   width: 200px;
   height: auto;
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #story-img {
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+  }
 }
