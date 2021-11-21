@@ -1,4 +1,4 @@
- export const StoryLine = {
+export const StoryLine = {
   1: {
     button1: "Here, take some gold",
     button2: "Get away you filthy oaf",
@@ -50,7 +50,7 @@
   },
 
   6: {
-    button1: "*Continues drinking!*",
+    button1: "*Continue drinking!*",
     button2: "This will not end well for ye!",
     header: `<h2>You take the bottle in haste without realising the cowhand has become a great Witch!"</h2>`,
     text: `<img id="old-man" src="./imagesfolder/path2.2.png">
@@ -80,61 +80,46 @@
   },
 
   9: {
-    button1: "**",
-    button2: "9",
-    header: `<h2>The cowhand realises that the true villain of this piece is Lactose Intolerance</h2>`,
+    button1: "*You continue pulling...*",
+    button2: "*You drink some refreshing river water*",
+    header: `<h2>Your conversation awkwardly ends and you leave in search of great power. You stumble upon a sword standing tall in a pedestal.</h2>`,
     text: `<img id="old-man" src="daf.png">
       <div id="welcome">
-      <h2 id="main-text">I've wasted my life! What</h2>
+      <h2 id="main-text">You stand tall and begin to pull the sword but there's incredible resistence.</h2>
       </div>`,
   },
 
+//  The cowhand realises that the true villain of this piece is Lactose Intolerance.
+
   10: {
-    button1: "10",
-    button2: "10",
-    header: `<h2>10</h2>`,
+    button1: "Take up arms, friend, for now we fight!",
+    button2: "Let me explain one more time...",
+    header: `<h2>You talk about Cows for 12 hours. The cowhand can't take anymore.</h2>`,
     text: `<img id="old-man" src="daf.png">
     <div id="welcome">
-    <h2 id="main-text">10</h2>
+    <h2 id="main-text">"I can't take anymore! I challenge you to a battle!</h2>
     </div>`,
   },
   11: {
-    button1: "11",
-    button2: "11",
-    header: `<h2>11</h2>`,
+    button1: "*Continue drinking!*",
+    button2: "*Throw the sacred Milk at the witch!*",
+    header: `<h2>The Witch is flumuxed by your continous drinking of the sacred Milk!</h2>`,
     text: `<img id="old-man" src="daf.png">
       <div id="welcome">
-      <h2 id="main-text">11</h2>
+      <h2 id="main-text">"This Milk should be killing you! How is this possible?"</h2>
       </div>`,
   },
 
   12: {
-    button1: "12",
-    button2: "12",
-    header: `<h2>12</h2>`,
+    button1: "Cow friends *would you kindly* kill this witch!",
+    button2: "*Throw the Milk at the Witch!*",
+    header: `<h2>The Witch calls upon the sacred Cows of Codeshire to descend from the mountains.</h2>`,
     text: `<img id="old-man" src="daf.png">
     <div id="welcome">
-    <h2 id="main-text">12</h2>
+    <h2 id="main-text">""</h2>
     </div>`,
   },
   13: {
-    button1: "",
-    button2: "",
-    header: `<h2>You seek power and the old man gives it to you, but absolute power corrupts absolutely and you become the villain of this story!</h2>`,
-    text: `<img id="old-man" src="daf.png">`,
-  },
-
-  14: {
-    button1: "14",
-    button2: "14",
-    header: `<h2>14</h2>`,
-    text: `<img id="old-man" src="daf.png">
-    <div id="welcome">
-    <h2 id="main-text">Ending2</h2>
-    </div>`,
-  },
-
-  15: {
     button1: "Restart",
     button2: "",
     header: `<h2>The man nods with approvement.</h2>`,
@@ -144,7 +129,15 @@
     </div>`,
   },
 
-  16: {
+  14:{
+    button1: "Restart",
+    button2: "",
+    header: `<h2>You seek power and the old man gives it to you, but absolute power corrupts absolutely and you become the villain of this story!</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    `,
+  }, 
+
+  15: {
     button1: "Restart",
     button2: "",
     header: `<h2>The great Elf sees the kindness in your heart and bequeths you the finest sword in all of Codeshire.</h2>`,
@@ -153,7 +146,8 @@
       <h2 id="main-text">"It's dangerous to go alone. Take this, for you have the heart of a hero."</h2>
     </div>`,
   },
-  17: {
+
+  16: {
     button1: "Restart",
     button2: "",
     header: `<h2>You attempt to fight the great Elf but her powers are too much for you and she destroys you with a punishing blow. It's super effective</h2>`,
@@ -163,10 +157,64 @@
     </div>`,
   },
 
-  18: {
+  17: {
     button1: "Restart",
     button2: "",
     header: `<h2>You have died of dysentery</h2>`,
-    text: `<img id="old-man" src="./imagesfolder/game_over.png">`,
+    text: `<img id="old-man" src="./imagesfolder/game_over.png">
+    <div id="welcome">
+      <h2 id="main-text"></h2>
+    </div>`,
   },
+
+  18: {
+    button1: "Restart",
+    button2: "",
+    header: `<h2>You both charge though you quickly gain the upper hand. As you rain blows upon the Cowhand you realise what your hatred has done to you. You're a monster!</h2>`,
+    text: `<img id="old-man" src="./imagesfolder/game_over.png">
+    <div id="welcome">
+      <h2 id="main-text">"We all make choices in life, but in the end our choices make us."</h2>
+    </div>`,
+  },
+
+
+  19: {
+    button1: "Restart",
+    button2: "",
+    header: `<h2>You pull with all your might and the sword releases from the pedestal! You are the great</h2>`,
+    text: `<img id="old-man" src="./imagesfolder/game_over.png">
+    <div id="welcome">
+      <h2 id="main-text">Congratulations! You are the Hero of Codeshire!</h2>
+    </div>`,
+  },
+
+  20: {
+    button1: "Restart",
+    button2: "",
+    header: `<h2>You fend off the Cowhand with your words, your stories, your past deeds. You ponder what is better – to be born good, or to overcome your evil nature through great effort?</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+    <h2 id="main-text">Your story ends with a new friend made, and a new perspective.</h2>
+    </div>`,
+  },
+
+  21: {
+    button1: "Restart",
+    button2: "",
+    header: `<h2>The Sacred Cows of Codeshire turn on the Witch and trample upon her, before silently returning to the Mountains.</h2>`,
+    text: `<img id="old-man" src="">
+    <div id="welcome">
+      <h2 id="main-text">You have finally realised the udder madness of war.</h2>
+    </div>`,
+  },
+
+  22: {
+    button1: "Restart",
+    button2: "",
+    header: `<h2>The Witch accidentally tastes the Milk and realises that SHE will die of Dysentry</h2>`,
+    text: `<img id="old-man" src="daf.png">
+    <div id="welcome">
+      <h2 id="main-text">You are now the leader of the sacred Cows of Codeshire! What a mooment!</h2>
+    </div>`,
+  },  
 };

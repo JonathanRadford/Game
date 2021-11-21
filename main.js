@@ -17,10 +17,6 @@ const playAudio = () => {
   music.play();
 }
 
-const pauseAudio = () => {
-  music.pause();
-}
-
 const prologue = () => {
   button2.addEventListener("click", rename);
   button1.addEventListener("click", () => {
@@ -35,21 +31,21 @@ const getStart = () => {
   button1.innerHTML = "Path 1";
   button2.innerHTML = "Path 2";
   button1.addEventListener("click", () =>
-    getStage(1, () => {getStage(3, () => {getStage(7, getEnding3, getEnding1);},
-                                   () => {getStage(8, getEnding4, getEnding5);},
+    getStage(1, () => {getStage(3, () => {getStage(7, getEnding1, getEnding2);},
+                                   () => {getStage(8, getEnding3, getEnding4);},
 );},
              
-                () => {getStage(4, () => {getStage(7, getEnding3, getEnding1);},
-                                   () => {getStage(8, getEnding4, getEnding5);},
+                () => {getStage(4, () => {getStage(7, getEnding1, getEnding2);},
+                                   () => {getStage(8, getEnding3, getEnding4);},
 );},));
 
   button2.addEventListener("click", () =>
-    getStage(2, () => {getStage(5, () => {getStage(9, getEnding4, getEnding4);},
-                                   () => {getStage(10, getEnding3, getEnding3);},
+    getStage(2, () => {getStage(5, () => {getStage(9, getEnding7, getEnding5);},
+                                   () => {getStage(10, getEnding6, getEnding8);},
 );},
          
-                () => {getStage(6, () => {getStage(11, getEnding2, getEnding3);},
-                                   () => {getStage(12, getEnding4, getEnding4);},
+                () => {getStage(6, () => {getStage(11, getEnding5, getEnding10);},
+                                   () => {getStage(12, getEnding9, getEnding10);},
 );},));}
 
 
@@ -76,7 +72,8 @@ const getEnding1 = () => {
   button2.innerHTML = `${StoryLine[13].button2}`;
   header.innerHTML = `${StoryLine[13].header}`;
   gameArea.innerHTML = `${StoryLine[13].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
+  button2.style = "display: none"
   
 }
 
@@ -85,10 +82,9 @@ const getEnding2 = () =>{
   button2.innerHTML = `${StoryLine[14].button2}`;
   header.innerHTML = `${StoryLine[14].header}`;
   gameArea.innerHTML = `${StoryLine[14].text}`;
-  button1.style = "display: none"
+  button1.addEventListener('click', refreshPage)
   button2.style = "display: none"
 }
-
 
 const getEnding3 = () => {
   button1.innerHTML = `${StoryLine[15].button1}`;
@@ -126,6 +122,43 @@ const getEnding6 = () =>{
   button2.style = "display: none"
 }
 
+const getEnding7 = () => {
+  button1.innerHTML = `${StoryLine[19].button1}`;
+  button2.innerHTML = `${StoryLine[19].button2}`;
+  header.innerHTML = `${StoryLine[19].header}`;
+  gameArea.innerHTML = `${StoryLine[19].text}`;
+  button1.addEventListener('click', refreshPage)
+  button2.style = "display: none"
+}
+
+const getEnding8 = () =>{
+  button1.innerHTML = `${StoryLine[20].button1}`;
+  button2.innerHTML = `${StoryLine[20].button2}`;
+  header.innerHTML = `${StoryLine[20].header}`;
+  gameArea.innerHTML = `${StoryLine[20].text}`;
+  button1.addEventListener('click', refreshPage)
+  button2.style = "display: none"
+}
+
+const getEnding9 = () => {
+  button1.innerHTML = `${StoryLine[21].button1}`;
+  button2.innerHTML = `${StoryLine[21].button2}`;
+  header.innerHTML = `${StoryLine[21].header}`;
+  gameArea.innerHTML = `${StoryLine[21].text}`;
+  button1.addEventListener('click', refreshPage)
+  button2.style = "display: none"
+}
+
+const getEnding10 = () =>{
+  button1.innerHTML = `${StoryLine[22].button1}`;
+  button2.innerHTML = `${StoryLine[22].button2}`;
+  header.innerHTML = `${StoryLine[22].header}`;
+  gameArea.innerHTML = `${StoryLine[22].text}`;
+  button1.addEventListener('click', refreshPage)
+  button2.style = "display: none"
+}
+
+
 const refreshPage = () => {
   location.reload();
 }
@@ -137,5 +170,5 @@ const rename = () => {
 
 
 //initial logic
+music.play()
 prologue();
-playAudio();
