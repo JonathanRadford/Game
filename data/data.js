@@ -63,7 +63,7 @@ export const StoryLine = {
     button1: "I dream of a better life. Wisdom",
     button2: "I seek POWER!",
     header: `<h2>You notice a wise man camping by a fire, stroking his beard. You approach. </h2>`,
-    text: `<img id="story-img" src="./imagesfolder/path1.png">
+    text: `<img id="story-img" src="./imagesfolder/beardman.png">
       <div id="welcome">
       <h2 id="main-text"> "I see you've made it this far. Do you seek wisdom or power?"</h2>
       </div>`,
