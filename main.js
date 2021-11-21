@@ -4,7 +4,7 @@
 //call the specific story data when a button is pressed
 import {StoryLine} from "./data/data.js";
 
-const Welcome = document.getElementById("welcome");
+const welcome = document.getElementById("welcome");
 const inputName = document.getElementById("name-input");
 const button1 = document.getElementById("btn-one");
 const button2 = document.getElementById("btn-two");
@@ -27,7 +27,7 @@ const prologue = () => {
 };
 
 const getStart = () => {
-  Welcome.innerHTML = "Welcome, " + newName + ". We shall begin your journey!";
+  welcome.innerHTML = "Welcome, " + newName + ". We shall begin your journey!";
   button1.innerHTML = "Path 1";
   button2.innerHTML = "Path 2";
   button1.addEventListener("click", () =>
@@ -162,12 +162,11 @@ const getEnding10 = () =>{
 const refreshPage = () => {
   location.reload();
 }
+
 const rename = () => {
   inputName.value = ""
   console.log("THIS")
 }
-
-
 
 //initial logic
 music.play()
