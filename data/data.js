@@ -63,7 +63,7 @@ export const StoryLine = {
     button1: "I dream of a better life. Wisdom",
     button2: "I seek POWER!",
     header: `<h2>You notice a wise man camping by a fire, stroking his beard. You approach. </h2>`,
-    text: `<img id="story-img" src="./imagesfolder/beardman.png">
+    text: `<img id="story-img" src="./imagesfolder/beard.png">
       <div id="welcome">
       <h2 id="main-text"> "I see you've made it this far. Do you seek wisdom or power?"</h2>
       </div>`,
@@ -111,7 +111,7 @@ export const StoryLine = {
   },
 
   12: {
-    button1: "Cow friends we must end our fued. Would you kindly kill this witch!",
+    button1: "This cow fued must end. Would you kindly kill this witch!",
     button2: "*Throw your Milk at the Witch!*",
     header: `<h2>The Witch calls upon the sacred Cows of Codeshire to descend from the mountains.</h2>`,
     text: `<img id="story-img" src="./imagesfolder/cows.png">

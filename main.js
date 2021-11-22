@@ -16,6 +16,10 @@ const header = document.getElementById("heading");
 const music = document.getElementById("myAudio");
 let newName;
 
+const playAudio = () => {
+  music.play();
+}
+
 //function that begins the Game
 const prologue = () => {
   button2.addEventListener("click", rename);
@@ -25,7 +29,6 @@ const prologue = () => {
     return newName;
   });
 };
-
 
 //takes the player to the path split and prints their name
 //button functions act on each new click by returning story information to the HTML
@@ -40,10 +43,26 @@ const getStart = () => {
         getStage(
           3,
           () => {
-            getStage(7, getEnding1, getEnding2);
+            getStage(
+              7,
+              () => {
+                getEnding(13);
+              },
+              () => {
+                getEnding(14);
+              }
+            );
           },
           () => {
-            getStage(8, getEnding3, getEnding4);
+            getStage(
+              8,
+              () => {
+                getEnding(15);
+              },
+              () => {
+                getEnding(16);
+              }
+            );
           }
         );
       },
@@ -52,10 +71,26 @@ const getStart = () => {
         getStage(
           4,
           () => {
-            getStage(7, getEnding1, getEnding2);
+            getStage(
+              7,
+              () => {
+                getEnding(13);
+              },
+              () => {
+                getEnding(14);
+              }
+            );
           },
           () => {
-            getStage(8, getEnding3, getEnding4);
+            getStage(
+              8,
+              () => {
+                getEnding(15);
+              },
+              () => {
+                getEnding(16);
+              }
+            );
           }
         );
       }
@@ -69,10 +104,26 @@ const getStart = () => {
         getStage(
           5,
           () => {
-            getStage(9, getEnding7, getEnding5);
+            getStage(
+              9,
+              () => {
+                getEnding(19);
+              },
+              () => {
+                getEnding(17);
+              }
+            );
           },
           () => {
-            getStage(10, getEnding6, getEnding8);
+            getStage(
+              10,
+              () => {
+                getEnding(18);
+              },
+              () => {
+                getEnding(20);
+              }
+            );
           }
         );
       },
@@ -81,10 +132,26 @@ const getStart = () => {
         getStage(
           6,
           () => {
-            getStage(11, getEnding5, getEnding10);
+            getStage(
+              11,
+              () => {
+                getEnding(17);
+              },
+              () => {
+                getEnding(22);
+              }
+            );
           },
           () => {
-            getStage(12, getEnding9, getEnding10);
+            getStage(
+              12,
+              () => {
+                getEnding(21);
+              },
+              () => {
+                getEnding(22);
+              }
+            );
           }
         );
       }
@@ -101,102 +168,11 @@ const getStage = (storyLineIndex, buttonOneAction, buttonTwoAction) => {
   button2.addEventListener("click", buttonTwoAction);
 };
 
-/*const getEnding = (storyLineIndex) => {
+const getEnding = (storyLineIndex) => {
   button1.innerHTML = `${StoryLine[storyLineIndex].button1}`;
   button2.innerHTML = `${StoryLine[storyLineIndex].button2}`;
   header.innerHTML = `${StoryLine[storyLineIndex].header}`;
   gameArea.innerHTML = `${StoryLine[storyLineIndex].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-*/
-
-const getEnding1 = () => {
-  button1.innerHTML = `${StoryLine[13].button1}`;
-  button2.innerHTML = `${StoryLine[13].button2}`;
-  header.innerHTML = `${StoryLine[13].header}`;
-  gameArea.innerHTML = `${StoryLine[13].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding2 = () => {
-  button1.innerHTML = `${StoryLine[14].button1}`;
-  button2.innerHTML = `${StoryLine[14].button2}`;
-  header.innerHTML = `${StoryLine[14].header}`;
-  gameArea.innerHTML = `${StoryLine[14].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding3 = () => {
-  button1.innerHTML = `${StoryLine[15].button1}`;
-  button2.innerHTML = `${StoryLine[15].button2}`;
-  header.innerHTML = `${StoryLine[15].header}`;
-  gameArea.innerHTML = `${StoryLine[15].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding4 = () => {
-  button1.innerHTML = `${StoryLine[16].button1}`;
-  button2.innerHTML = `${StoryLine[16].button2}`;
-  header.innerHTML = `${StoryLine[16].header}`;
-  gameArea.innerHTML = `${StoryLine[16].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding5 = () => {
-  button1.innerHTML = `${StoryLine[17].button1}`;
-  button2.innerHTML = `${StoryLine[17].button2}`;
-  header.innerHTML = `${StoryLine[17].header}`;
-  gameArea.innerHTML = `${StoryLine[17].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding6 = () => {
-  button1.innerHTML = `${StoryLine[18].button1}`;
-  button2.innerHTML = `${StoryLine[18].button2}`;
-  header.innerHTML = `${StoryLine[18].header}`;
-  gameArea.innerHTML = `${StoryLine[18].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding7 = () => {
-  button1.innerHTML = `${StoryLine[19].button1}`;
-  button2.innerHTML = `${StoryLine[19].button2}`;
-  header.innerHTML = `${StoryLine[19].header}`;
-  gameArea.innerHTML = `${StoryLine[19].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding8 = () => {
-  button1.innerHTML = `${StoryLine[20].button1}`;
-  button2.innerHTML = `${StoryLine[20].button2}`;
-  header.innerHTML = `${StoryLine[20].header}`;
-  gameArea.innerHTML = `${StoryLine[20].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding9 = () => {
-  button1.innerHTML = `${StoryLine[21].button1}`;
-  button2.innerHTML = `${StoryLine[21].button2}`;
-  header.innerHTML = `${StoryLine[21].header}`;
-  gameArea.innerHTML = `${StoryLine[21].text}`;
-  button1.addEventListener("click", refreshPage);
-  button2.style = "display: none";
-};
-
-const getEnding10 = () => {
-  button1.innerHTML = `${StoryLine[22].button1}`;
-  button2.innerHTML = `${StoryLine[22].button2}`;
-  header.innerHTML = `${StoryLine[22].header}`;
-  gameArea.innerHTML = `${StoryLine[22].text}`;
   button1.addEventListener("click", refreshPage);
   button2.style = "display: none";
 };
@@ -211,4 +187,5 @@ const rename = () => {
 };
 
 //initial logic
+playAudio();
 prologue();
